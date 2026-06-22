@@ -78,7 +78,7 @@ public class DevolucionController {
 
     @Operation(
         summary = "Registrar una devolucion",
-        description = "Permite registrar una nueva devolucion en el sistema"
+        description = "Permite registrar una nueva devolucion en el sistema. Motivos: PRODUCTO_DANADO, PEDIDO_EQUIVOCADO, ERROR_FABRICA, PRODUCTO_INCOMPLETO"
     )
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Devolucion creada correctamente"),
@@ -96,7 +96,7 @@ public class DevolucionController {
 
     @Operation(
         summary = "Actualizar estado de devolucion",
-        description = "Permite actualizar el estado de una devolucion existente por medio de su id"
+        description = "Permite actualizar el estado de una devolucion existente por medio de su id. Estados: PENDIENTE, ACEPTADA, RECHAZADA, EN_PROCESO, COMPLETADA"
     )
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Estado actualizado correctamente"),
